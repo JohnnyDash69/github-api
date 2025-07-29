@@ -1,0 +1,94 @@
+/* Main container */
+.App {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+}
+
+/* Logo styling */
+.App-logo {
+  height: 15vmin;
+  pointer-events: none;
+  transition: transform 0.5s ease;
+}
+
+.App-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Logo animation on load */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 10s linear;
+  }
+}
+
+/* Header styling */
+.App-header {
+  background-color: #282c34;
+  color: white;
+  padding: 2rem 1rem;
+  border-radius: 15px;
+  max-width: 80%;
+  margin: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.App-header h1 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+}
+
+.App-header p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+/* Link styling */
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.App-link:hover {
+  background-color: #61dafb;
+  color: #282c34;
+  transform: translateY(-2px);
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  .App-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .App-header p {
+    font-size: 1rem;
+  }
+
+  .App-link {
+    font-size: 1rem;
+  }
+}
+
+/* Keyframes for logo spin */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
